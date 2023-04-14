@@ -1,0 +1,18 @@
+{
+    "name": "MyAnimeList Public Score on my list",
+    "version": "1.0.0",
+    "description": "Fetchs the public score of animes/mangas on your private list and shows in a column",
+    "manifest_version": 3,
+    "author": "Guilherme Zamberlam Pomini",
+    "content_scripts": [
+      {
+        "matches": [
+          "https://myanimelist.net/animelist/*",
+          "https://myanimelist.net/mangalist/*"
+        ],
+        "js": [ "src/jquery.js" ,"src/main.js"],
+        "css": ["src/style.css"]
+      }
+    ]
+  }
+  
